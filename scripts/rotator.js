@@ -1,6 +1,16 @@
-document.addEventListener('DOMContentLoaded', function(){
-    createSlideShow();    
-});
+if(document.addEventListener){
+    document.addEventListener('DOMContentLoaded', function(){
+        createSlideShow();  
+    });
+}else{
+    //If we get here then we already know it's IE so might as well just do what works in IE 8 as well as 9 even though 9 supports the
+    //DOMContentLoaded event listener
+    document.onreadystatechange = function(){
+        if(document.readyState == "interactive"){
+            createSlideShow();        
+        }
+    };
+}
 
 function createSlideShow(){
     var imageArray = document.getElementsByTagName('img');
