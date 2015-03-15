@@ -62,3 +62,25 @@ h1 {
 span.red {
 	color: #DC291E;
 }
+
+#rotator h4{
+	margin: 0 auto;
+	
+}
+#rotator {
+	color: #000000;
+}
+.faded{
+	 opacity: 0;
+     filter: alpha(opacity=0);    
+}
+.shown{
+	opacity: 1;
+     filter: alpha(opacity=100);
+    transition: all 1.5s ease;
+	-webkit-transition: all 1.5s ease;
+	-moz-transition: all 1.5s ease;   
+}
+
+
+
