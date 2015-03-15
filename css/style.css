@@ -82,5 +82,63 @@ span.red {
 	-moz-transition: all 1.5s ease;   
 }
 
+.tabbed-content{
+	display: none;
+	float: left;
+  	background-color: #fff;
+  	color: #000;
+  	width: 680px;
+  	height: 120px;
+  	border: 1px solid;
+}
+.tabbed-content p{
+	margin-left: 5px;
+}
+
+.tabs{
+	list-style: none;
+	float: left;
+  	width: 100%;
+  	padding: 0px;
+  	margin-bottom: 0px;
+}
+.tabs li{
+	display: inline-block;
+  	float: left;
+  	background-color: #ffffff;
+  	color: #000000;
+  	height: 31px;
+  	margin: 0px;
+  	border: 1px solid #000000;
+  	cursor: pointer;
+  	width: 50px;
+
+}
+.tabs li h3 a{
+	text-decoration: none;
+	color: #000;
+	width:100%;
+	height:100%;
+	line-height: 32px;
+	text-align:center;
+	padding: 5px 2px;
+}
+
+.tabs li h3{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#container{
+	height: 180px;
+}
+
+.active{
+	-webkit-box-shadow: 0px -3px 0px 0px rgba(186,186,186,1);
+	-moz-box-shadow: 0px -3px 0px 0px rgba(186,186,186,1);
+	box-shadow: 0px -3px 0px 0px rgba(186,186,186,1);
+}
+
 
 
